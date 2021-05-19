@@ -14,12 +14,31 @@
 		top: 0;
 		left: -15%;
 		width: 35rem;
-		height: 39rem;
+		height: 43.75rem;
+	}
+}
+
+@media screen and (min-width: 1020px) {
+	.bg-pattern {
+		position: absolute;
+		top: 0;
+		left: -10%;
+		height: 45rem;
 	}
 
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	main {
+		padding: 9.375rem 0 0 0;
+		transition: all $transition-delay;
+
+		.main-wrapper {
+			flex-direction: row;
+
+			.main-details {
+				padding-top: 0;
+				padding-left: 8rem;
+				text-align: left;
+				width: 69%;
+			}
+		}
 	}
 }
