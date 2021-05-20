@@ -332,4 +332,20 @@ main {
 	}
 }
 
+.attribution {
+	text-align: center;
+	font-size: 0.9rem;
+	padding: 0 0.5rem 0.8rem 0.5rem;
+
+	a {
+		color: $light-violet;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
 @import 'media';

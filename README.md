@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/mobilefirst-chat-app-illustration-using-sass-and-gsap-for-animations-Eea-aF9FH)
+- Live Site URL: [Netlify](https://jhoell-chat-app-illustration.netlify.app/)
 
 ## My process
 
