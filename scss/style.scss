@@ -14,7 +14,10 @@ body {
 	background: $app-bg;
 	font-family: $font-rubik;
 	font-size: $font-size;
+	min-height: 100vh;
 }
+
+//----------------- Utilities -----------------
 
 .container {
 	width: 83%;
@@ -27,28 +30,55 @@ body {
 	align-items: center;
 }
 
-// Background Patterns
-.bg-pattern {
-	$gradient-direction: to right bottom;
-	$gradient: linear-gradient(
-		$gradient-direction,
-		$light-magenta,
-		$light-violet
-	);
+//---------------- Background Patterns ----------------
+.app-container {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
 
-	position: absolute;
-	top: 0;
-	left: -60%;
-	width: 23.5rem;
-	height: 31.25rem;
-	background-image: $gradient;
-	background-color: $light-violet;
-	border-radius: 0 0 31.25rem 31.25rem;
-	z-index: -1;
-	transition: all $transition-delay;
+	.bg-pattern {
+		$gradient-direction: to right bottom;
+		$gradient: linear-gradient(
+			$gradient-direction,
+			$light-magenta,
+			$light-violet
+		);
+
+		position: absolute;
+		top: 0;
+		left: -60%;
+		width: 23rem;
+		height: 31.25rem;
+		background-image: $gradient;
+		background-color: $light-violet;
+		border-radius: 0 0 31.25rem 31.25rem;
+		z-index: -1;
+		transition: all $transition-delay;
+	}
+
+	.bg-pattern-2 {
+		$gradient-direction: to right bottom;
+		$gradient: linear-gradient(
+			$gradient-direction,
+			$light-violet 20%,
+			$light-magenta 80%
+		);
+		position: absolute;
+		bottom: 0;
+		right: -60%;
+		width: 23rem;
+		height: 34rem;
+		background-image: $gradient;
+		background-color: $light-violet;
+		border-radius: 31.25rem 31.25rem 0 0;
+		opacity: 0.05;
+		z-index: -1;
+		transition: all $transition-delay;
+	}
 }
 
-// Main
+//--------------- Main ---------------------
 main {
 	padding: 4.0625rem 0 4.4375rem 0;
 	transition: all $transition-delay;
@@ -61,14 +91,14 @@ main {
 		.phone-app-UI {
 			position: relative;
 			width: 15.5625rem;
-			height: 32.58rem;
+			height: 32.7rem;
 			background: $app-bg;
 			border: 8px solid $white;
 			border-radius: 1.9375rem;
 			box-shadow: 7px 20px 40px rgba($color: #000000, $alpha: 0.1);
 			overflow: hidden;
 
-			// Top of phone
+			// ----------- Top of phone -----------
 			.top-part-phone {
 				position: absolute;
 				top: -0.5%;
@@ -125,7 +155,7 @@ main {
 
 								.name {
 									font-size: 0.6875rem;
-									color: rgba($color: $white, $alpha: 0.95);
+									color: $white;
 									padding-bottom: 0.1rem;
 								}
 
@@ -145,7 +175,7 @@ main {
 				}
 			}
 
-			// Chat interface
+			//---------------  Chat interface -----------
 			.chat-interface {
 				padding-top: 0.1875rem;
 
@@ -162,6 +192,8 @@ main {
 						padding: 0.5rem;
 						font-size: 0.5rem;
 						line-height: 1.5;
+						transform: scale(1);
+						transform-origin: left bottom;
 					}
 
 					.user-text {
@@ -174,6 +206,8 @@ main {
 						max-width: 60%;
 						padding: 0.5rem;
 						font-size: 0.5rem;
+						transform: scale(1);
+						transform-origin: right bottom;
 					}
 
 					.user-text-1 {
@@ -214,6 +248,8 @@ main {
 						margin-top: 0.56rem;
 						padding: 0.625rem 1rem 0.625rem 0.5rem;
 						font-size: 0.5rem;
+						transform: scale(1);
+						transform-origin: left bottom;
 
 						label {
 							display: flex;

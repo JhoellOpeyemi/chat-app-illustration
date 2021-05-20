@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="This is a Chat App Illustration Challenge on Frontend Mentor"
+		/>
 
 		<link
 			rel="icon"
@@ -11,6 +15,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 
+		<!----------------- Font Awesome CDN -------------->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -22,117 +27,134 @@
 		<title>Jhoell | Frontend Mentor | Chat App Illustration</title>
 	</head>
 	<body>
-		<div class="bg-pattern"></div>
-		<main>
-			<div class="container">
-				<div class="main-wrapper">
-					<div class="phone-app-UI">
-						<div class="top-part-phone"></div>
-						<div class="top-app-UI">
-							<div class="wrapper flex">
-								<div class="back-arrow">
-									<i class="fas fa-angle-left"></i>
-								</div>
+		<div class="app-container">
+			<!-------------- Background  Pattern ----------------->
+			<div class="bg-pattern"></div>
+			<div class="bg-pattern-2"></div>
 
-								<div class="profile-wrapper flex">
-									<div class="profile flex">
-										<div class="profile-avatar">
-											<img
-												src="./images/avatar.jpg"
-												alt="Other person profile picture"
-											/>
-										</div>
-
-										<div class="profile-details">
-											<h3 class="name">Samuel Green</h3>
-											<p class="status">Available to Walk</p>
-										</div>
+			<!------------------ Main --------------->
+			<main>
+				<div class="container">
+					<div class="main-wrapper">
+						<!----------------- Phone Illustration -------------->
+						<div class="phone-app-UI">
+							<div class="top-part-phone"></div>
+							<div class="top-app-UI">
+								<div class="wrapper flex">
+									<div class="back-arrow">
+										<i class="fas fa-angle-left"></i>
 									</div>
 
-									<div class="more-options">
-										<i class="fas fa-ellipsis-v"></i>
+									<div class="profile-wrapper flex">
+										<div class="profile flex">
+											<div class="profile-avatar">
+												<img
+													src="./images/avatar.jpg"
+													alt="Other person profile picture"
+												/>
+											</div>
+
+											<div class="profile-details">
+												<h3 class="name">Samuel Green</h3>
+												<p class="status">Available to Walk</p>
+											</div>
+										</div>
+
+										<div class="more-options">
+											<i class="fas fa-ellipsis-v"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="chat-interface">
+								<div class="wrapper">
+									<p class="other-person-text other-person-text-1">
+										That sounds great. I’d be happy with that.
+									</p>
+
+									<p class="other-person-text other-person-text-2">
+										Could you send over some pictures of your dog, please?
+									</p>
+
+									<div class="user-text-1">
+										<img
+											src="./images/dog-image-1.jpg"
+											alt="A dog smiling"
+											class="first-image"
+										/>
+										<img
+											src="./images/dog-image-2.jpg"
+											alt="A dog sitting down smiling"
+											class="second-image"
+										/>
+										<img
+											src="./images/dog-image-3.jpg"
+											alt="A dog with a log of wood in it's mouth"
+											class="third-image"
+										/>
+									</div>
+
+									<p class="user-text user-text-2">
+										Here are a few pictures. She’s a happy girl!
+									</p>
+
+									<p class="user-text user-text-3">Can you make it?</p>
+
+									<p class="other-person-text other-person-text-3">
+										She looks so happy! The time we discussed works. How long
+										shall I take her out for?
+									</p>
+
+									<div class="other-person-text-4 price-chat">
+										<label>
+											<input type="radio" name="price" class="select-price" />
+											<span> 30 minute walk</span>
+										</label>
+										<span class="price">$29</span>
+									</div>
+
+									<div class="other-person-text-5 price-chat">
+										<label>
+											<input type="radio" name="price" class="select-price" />
+											<span>1 hour walk</span>
+										</label>
+										<span class="price"> $49</span>
+									</div>
+
+									<div class="type-message">
+										<p>Type a message…</p>
+										<button class="send-btn">
+											<i class="fas fa-chevron-right"></i>
+										</button>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="chat-interface">
-							<div class="wrapper">
-								<p class="other-person-text other-person-text-1">
-									That sounds great. I’d be happy with that.
-								</p>
-
-								<p class="other-person-text other-person-text-2">
-									Could you send over some pictures of your dog, please?
-								</p>
-
-								<div class="user-text-1">
-									<img src="./images/dog-image-1.jpg" alt="A dog smiling" />
-									<img
-										src="./images/dog-image-2.jpg"
-										alt="A dog sitting down smiling"
-									/>
-									<img
-										src="./images/dog-image-3.jpg"
-										alt="A dog with a log of wood in it's mouth"
-									/>
-								</div>
-
-								<p class="user-text user-text-2">
-									Here are a few pictures. She’s a happy girl!
-								</p>
-
-								<p class="user-text user-text-3">Can you make it?</p>
-
-								<p class="other-person-text other-person-text-3">
-									She looks so happy! The time we discussed works. How long
-									shall I take her out for?
-								</p>
-
-								<div class="other-person-text-4 price-chat">
-									<label>
-										<input type="radio" name="price" class="select-price" />
-										<span> 30 minute walk</span>
-									</label>
-									<span class="price">$29</span>
-								</div>
-
-								<div class="other-person-text-5 price-chat">
-									<label>
-										<input type="radio" name="price" class="select-price" />
-										<span>1 hour walk</span>
-									</label>
-									<span class="price"> $49</span>
-								</div>
-
-								<div class="type-message">
-									<p>Type a message…</p>
-									<button class="send-btn">
-										<i class="fas fa-chevron-right"></i>
-									</button>
-								</div>
-							</div>
+						<!------------------ Main Details ----------->
+						<div class="main-details">
+							<h1 class="main-heading">Simple booking</h1>
+							<p class="main-p">
+								Stay in touch with our dog walkers through the chat interface.
+								This makes it easy to discuss arrangements and make bookings.
+								Once the walk has been completed you can rate your walker and
+								book again all through the chat.
+							</p>
 						</div>
-					</div>
-
-					<div class="main-details">
-						<h1 class="main-heading">Simple booking</h1>
-						<p class="main-p">
-							Stay in touch with our dog walkers through the chat interface.
-							This makes it easy to discuss arrangements and make bookings. Once
-							the walk has been completed you can rate your walker and book
-							again all through the chat.
-						</p>
 					</div>
 				</div>
-			</div>
-		</main>
-		<div class="bg-pattern-2"></div>
+			</main>
+		</div>
 
 		<!-- 
   			<div class="attribution">
 				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend 	Mentor</a>. 
 				Coded by <a href="#">Your Name Here</a>.
   			</div> -->
+
+		<!-------------- GSAP CDN ----------->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script src="./js/app.js"></script>
 	</body>
 </html>
