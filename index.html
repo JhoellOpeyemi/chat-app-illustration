@@ -42,7 +42,7 @@
 							<div class="top-app-UI">
 								<div class="wrapper flex">
 									<div class="back-arrow">
-										<i class="fas fa-angle-left"></i>
+										<i class="fas fa-angle-left" aria-hidden="true"></i>
 									</div>
 
 									<div class="profile-wrapper flex">
@@ -68,16 +68,18 @@
 							</div>
 
 							<div class="chat-interface">
-								<div class="wrapper">
-									<p class="other-person-text other-person-text-1">
-										That sounds great. I’d be happy with that.
-									</p>
+								<div class="chat-area">
+									<div class="received received-1">
+										<p>That sounds great. I’d be happy with that.</p>
+									</div>
 
-									<p class="other-person-text other-person-text-2">
-										Could you send over some pictures of your dog, please?
-									</p>
+									<div class="received received-2">
+										<p>
+											Could you send over some pictures of your dog, please?
+										</p>
+									</div>
 
-									<div class="user-text-1">
+									<div class="sent sent-1">
 										<img
 											src="./images/dog-image-1.jpg"
 											alt="A dog smiling"
@@ -95,18 +97,22 @@
 										/>
 									</div>
 
-									<p class="user-text user-text-2">
-										Here are a few pictures. She’s a happy girl!
-									</p>
+									<div class="sent sent-2">
+										<p>Here are a few pictures. She’s a happy girl!</p>
+									</div>
 
-									<p class="user-text user-text-3">Can you make it?</p>
+									<div class="sent sent-3">
+										<p>Can you make it?</p>
+									</div>
 
-									<p class="other-person-text other-person-text-3">
-										She looks so happy! The time we discussed works. How long
-										shall I take her out for?
-									</p>
+									<div class="received received-3">
+										<p>
+											She looks so happy! The time we discussed works. How long
+											shall I take her out for?
+										</p>
+									</div>
 
-									<div class="other-person-text-4 price-chat">
+									<div class="received-4 price-chat">
 										<label>
 											<input type="radio" name="price" class="select-price" />
 											<span> 30 minute walk</span>
@@ -114,20 +120,25 @@
 										<span class="price">$29</span>
 									</div>
 
-									<div class="other-person-text-5 price-chat">
+									<div class="received-5 price-chat">
 										<label>
 											<input type="radio" name="price" class="select-price" />
 											<span>1 hour walk</span>
 										</label>
 										<span class="price"> $49</span>
 									</div>
+								</div>
 
-									<div class="type-message">
-										<p>Type a message…</p>
-										<button class="send-btn" aria-label="Send message button">
-											<i class="fas fa-chevron-right"></i>
-										</button>
-									</div>
+								<div class="type-message">
+									<input
+										placeholder="Type a message.."
+										class="message-area"
+										spellcheck="false"
+									/>
+
+									<button class="send-btn" aria-label="Send message button">
+										<i class="fas fa-chevron-right" aria-hidden="true"></i>
+									</button>
 								</div>
 							</div>
 						</div>
